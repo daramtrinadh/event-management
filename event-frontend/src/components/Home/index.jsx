@@ -8,6 +8,9 @@ import { useEffect, useState } from 'react';
 import './index.css';
 
 const Home = () => {
+    const recommendedEventsUrl = process.env.REACT_APP_RECOMMENDED_EVENTS_URL;
+    const upcomingEventsUrl = process.env.REACT_APP_UPCOMING_EVENTS_URL;
+
     const [recommendedEvents, setRecommendedEvents] = useState([]);
     const [upcomingEvents, setUpcomingEvents] = useState([]);
     const [page, setPage] = useState(1);
@@ -17,7 +20,7 @@ const Home = () => {
     useEffect(() => {
         const fetchRecommendedEvents = async () => {
             try {
-                const url = "https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&type=reco";
+                const url = `${recommendedEventsUrl}`
                 const response = await fetch(url);
                 const data = await response.json();
                 const formattedEvents = data.events.map(event => ({
@@ -36,7 +39,7 @@ const Home = () => {
         if (isLoading || !hasMore) return;
         setIsLoading(true);
         try {
-            const url = `https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=${page}&type=upcoming`;
+            const url = `${upcomingEventsUrl}page=${page}&type=upcoming`;
             const response = await fetch(url);
             
             if (!response.ok) {

@@ -16,7 +16,7 @@ const Auth=()=>{
 
     const handleSignupSubmit = async(e) => {
         e.preventDefault()
-        const url="http://localhost:5000/event/signup";
+        const url="https://event-management-backend-no2a.onrender.com/event/signup";
         const options={
             method:'POST',
             headers:{
@@ -46,7 +46,7 @@ const Auth=()=>{
 
     const handleLoginSubmit = async(e) => {
         e.preventDefault()
-        const url="http://localhost:5000/event/login"
+        const url="https://event-management-backend-no2a.onrender.com/event/login"
         const options={
             method:'POST',
             headers:{
