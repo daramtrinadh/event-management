@@ -1,0 +1,134 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    background-color: #ffffff;
+}
+.logo-title{
+    color: #CF2D2D;
+}
+
+.location-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:-25px;
+}
+.search-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.categories{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
+    padding:3px;
+    height: 30px;
+    cursor: pointer;
+    margin:2px;
+}
+.menu-icon{
+    color:white;
+    margin:3px;
+}
+.cat-text{
+    color:white;
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:4px;
+    border:2px solid #B0BABF;
+    border-radius: 5px;
+    padding:2px;
+    height:30px;
+
+}
+.search-input{
+    border: none;
+    outline:none;
+}
+.fav-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+.categories-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.mobile-user-section{
+    display: none;
+}
+.fav-icon,
+.search-icon,
+.user-icon{
+    margin:4px;
+    color: #B0BABF;
+}
+.user-icon{
+    margin:4px;
+    color:#B0BABF;
+}
+.categories-items-mobile{
+    display: none;
+}
+.item{
+    margin:7px;
+}
+.logout-popup {
+    position: absolute;
+    top: 60px; 
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 100;
+}
+
+.logout-popup p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.logout-popup button {
+    background-color: #f04;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:480px) {
+    .mobile-user-section{
+        display: block;
+    }
+    .search-section{
+        display: none;
+
+    }
+    .user-section{
+        display: none;
+    }
+    .categories-items-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow-x: scroll;
+        justify-content: space-around;
+    }
+
+}

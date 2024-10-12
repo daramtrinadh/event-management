@@ -1,0 +1,40 @@
+.card {
+    margin:-10px;
+    width:500px;
+    height:190px;
+    margin-right:10px;
+    margin-left:10px;
+    border-radius: 10px;
+
+  }
+  
+.card-image {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-size:cover;
+    height:300px;
+    width:280px;
+    margin:10px;
+    border-radius: 10px;
+    padding:10px;
+}
+.event-city{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    margin:10px;
+}
+.event-name{
+    text-align: left;
+    font-size:15px;
+}
+.event-date{
+    color:white;
+}
+.location-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

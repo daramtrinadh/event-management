@@ -1,0 +1,103 @@
+.home-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+    background: url('../../images/eventbanner.png');
+    background-position: center;
+    background-size: cover;
+    height:100%;
+}
+.home-details{
+    margin-top:60px;
+}
+
+.home-head{
+    color: white;
+    text-align: center;
+
+}
+.home-para{
+    color:white;
+    text-align: center;
+}
+.recommend-section{
+    margin-top:150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.recommend-first-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:white;
+}
+.recommend-second-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:white;
+}
+.right-arrow{
+    margin:5px;
+}
+.see-all-text{
+    text-decoration: underline;
+}
+.events-list {
+    display: flex;
+  gap: 5px;
+  height: 320px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  margin-top:-20px;
+  }
+  
+  .event-list::-webkit-scrollbar {
+    display: none; 
+  }
+.upcoming-events{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.upcoming-events-first-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:black;
+}
+.upcoming-events-second-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:black;
+
+}
+.right-arrow-black{
+    color:black;
+}
+.upcoming-events-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+@media screen and (max-width:480px) {
+    .home-head{
+        font-size: 30px;
+    }
+    .recommend-section{
+        margin-top:70px;
+        padding:10px;
+    }
+    
+}
