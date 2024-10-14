@@ -34,7 +34,7 @@ const Auth=()=>{
             const response=await fetch(url,options)
             const data=await response.json()
             if (response.ok){
-                console.log("signup successfull")
+                alert('signup successful,Try login')
             }else{
                 setsignupError(data.error || 'Sign up Failed Try again Later')
 
